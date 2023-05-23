@@ -55,7 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     planets.forEach(planet => {
         const id = planet.dataset.value
-        console.log(document.querySelector(`[data-value="${id}"]`))
+
+        // Apply animation to all planets
         tl.to(`[data-value="${id}"]`, {
             duration: 15,
             ease: "none",
@@ -68,6 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 alignOrigin: [0.5, 0.5]
             }
         }, 0)
+
+        // Add event listener to all planets
         planet.addEventListener("click", () => {
             tl.pause()
         })

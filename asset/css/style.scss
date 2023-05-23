@@ -7,3 +7,43 @@ ol, ul {
   list-style: none;
   padding: 0;
 }
+
+body{
+  height: 100vh;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+.center{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#planet0{
+  background-color: blue;
+}
+
+#planet1{
+  background-color: red;
+}
+
+#planet2{
+  background-color: green;
+}
+
+#planet3{
+  background-color: purple;
+}

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const planets = document.querySelectorAll(".planet");
     const pages = document.querySelectorAll(".page");
     const body = document.body
-    const pageContent = document.querySelector('.dark-background')
+    const background = document.querySelector('.dark-background')
 
 
     planets.forEach((planet, index) => {
@@ -34,17 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
             height: '100vh',
             borderRadius: 0,
         }, 0)
-        openTL.to(pageContent, {
+        openTL.to(background, {
             duration: 1,
-            visibility: 'visible',
-            width: '100%',
-            height: '100vh',
-            opacity: 1
+            width: '150%',
+            opacity: 1,
         }, 0)
-        openTL.to(pageContent, {
-            duration: 1,
-            borderRadius: 0,
-        }, 1)
         openTL.to(page, {
             duration: 1,
             overflow: 'auto',
@@ -56,6 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2)
 
         // Close Timeline
+        closeTL.to(background, {
+            duration: 1,
+            width: 0,
+            opacity: 0
+        }, 0)
         closeTL.to(planet, {
             top: null,
             left: null,
@@ -67,10 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
             zIndex: 1,
             duration: 0,
         }, 1)
-        closeTL.to(pageContent, {
-            duration: 0.5,
-            opacity: 0
-        }, 0)
         closeTL.to(content, {
             duration: 0.5,
             opacity: 0
@@ -80,13 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
             overflow: 'hidden',
             visibility: 'hidden',
         }, 0)
-        closeTL.to(pageContent, {
-            duration: 1,
-            visibility: 'hidden',
-            width: 0,
-            height: 0,
-            borderRadius: '50%'
-        }, 1)
 
 
         planet.addEventListener("click", () => {

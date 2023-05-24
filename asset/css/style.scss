@@ -9,12 +9,10 @@ ol, ul {
 }
 
 body{
+  color: white;
+  background-color: #000;
   height: 100vh;
-}
-
-section{
-  width: 100%;
-  height: 100vh;
+  overflow: hidden;
 }
 
 .center{
@@ -27,25 +25,30 @@ section{
 
 .planet{
   position: absolute;
+  top: 0;
+  left: 0;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #planet0{
-  background-color: blue;
+  background-image: url("/img/planet/coruscant.svg");
 }
 
 #planet1{
-  background-color: red;
+  background-image: url("/img/planet/mustafar.svg");
 }
 
 #planet2{
-  background-color: green;
+  background-image: url("/img/planet/naboo.svg");
 }
 
 #planet3{
-  background-color: purple;
+  background-image: url("/img/planet/tatooine.svg");
 }
 
 #particles-js{
@@ -57,7 +60,7 @@ section{
   height: 100%;
 }
 
-/* Karen */
+/* modal */
 
 .page {
   background-color: red;

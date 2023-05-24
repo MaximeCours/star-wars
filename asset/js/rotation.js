@@ -4,8 +4,6 @@ import MotionPathPlugin from "gsap/MotionPathPlugin";
 // Import MotionPathPlugin used to follow ellipse path
 gsap.registerPlugin(MotionPathPlugin);
 
-
-
 // Set default position for planets
 gsap.to("#planet0", {
     duration: 0,
@@ -47,18 +45,17 @@ gsap.to("#planet3", {
     }
 })
 
+export const rotationTL = gsap.timeline()
 
 document.addEventListener("DOMContentLoaded", () => {
     const planets = document.querySelectorAll(".planet")
-
-    const tl = gsap.timeline()
 
     planets.forEach(planet => {
         const id = planet.dataset.value
 
         // Apply animation to all planets
-        tl.to(`[data-value="${id}"]`, {
-            duration: 15,
+        rotationTL.to(`[data-value="${id}"]`, {
+            duration: 50,
             ease: "none",
             repeat: -1,
             motionPath: {
@@ -72,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Add event listener to all planets
         planet.addEventListener("click", () => {
-            tl.pause()
+            rotationTL.pause()
         })
     })
 })

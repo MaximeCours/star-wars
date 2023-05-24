@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     planets.forEach((planet, index) => {
         const page = pages[index]
-        const content = page.children[0]
+        const content = document.querySelector('.content')
 
         const openTL = gsap.timeline({
             paused: true

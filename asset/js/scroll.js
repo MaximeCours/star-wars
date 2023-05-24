@@ -3,9 +3,20 @@ import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".title", {scrollTrigger: {
-    trigger: ".title",
-    start: "top +50%",
-    end: "bottom",
-    markers: true,
-}, duration: 3, x: "95vw"})
+let reveal = document.querySelectorAll(".page") 
+
+reveal.forEach( (el) => {
+    let headings = el.querySelectorAll("h2, p")
+    
+    let tl = gsap.timeline ()
+    .from(headings, {y:80, stagger:0.05, opacity:0, duration:1, ease:"power3.out"})
+    
+    ScrollTrigger.create ({
+        trigger: el,
+        start: "center 100%", 
+        end:"top 50%",
+        markers: true,
+        toggleActions: "play none none reverse ",
+        animation:tl
+    })
+})

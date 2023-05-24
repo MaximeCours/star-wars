@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             zIndex: 8,
             width: '100%',
             height: '100vh',
+            overflowY: 'auto'
         }, 0)
         openTL.to(page, {
             duration: 1,

@@ -33,6 +33,7 @@ body{
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 1;
 }
 
 #planet0{
@@ -63,7 +64,7 @@ body{
 /* modal */
 
 .page {
-  background-color: red;
+  background-color: #000;
   cursor: pointer;
   position: absolute;
   z-index: 2;
@@ -77,6 +78,6 @@ body{
   transform: translate(-50%, -50%);
 
   & > *{
-    visibility: hidden;
+    opacity: 0;
   }
 }

@@ -20,13 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Open Timeline
         openTL.to(planet, {
+            duration: 0,
+            zIndex: 5,
+        }, 0)
+        openTL.to(planet, {
             top: '50%',
             left: '50%',
-            transform: "translate(-50%, -50%)",
+            transform: "translate3d(-50%, -50%, 0)",
             duration: 1,
-            zIndex: 8,
             width: '100%',
             height: '100vh',
+            borderRadius: 0,
         }, 0)
         openTL.to(page, {
             duration: 1,
@@ -34,14 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
             width:'100%',
             height: '100vh',
             opacity: 1
-        }, 1)
+        }, 0)
         openTL.to(page, {
             duration: 1,
             borderRadius: 0
-        }, 2)
+        }, 1)
         openTL.to(content, {
             duration: 1,
-            visibility: 'visible'
+            opacity: 1
         }, 2)
 
         // Close Timeline
@@ -49,17 +53,20 @@ document.addEventListener("DOMContentLoaded", () => {
             top: null,
             left: null,
             duration: 1,
-            zIndex: 5,
             width: 200,
             height: 200,
         }, 0)
+        closeTL.to(planet, {
+            zIndex: 1,
+            duration: 0,
+        }, 1)
         closeTL.to(page, {
             duration: 0.5,
             opacity: 0
         }, 0)
         closeTL.to(content, {
             duration: 0.5,
-            visibility: 0
+            opacity: 0
         }, 0)
         closeTL.to(page, {
             duration: 1,
@@ -70,13 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1)
 
         planet.addEventListener("click", () => {
-            if(body.classList.contains('open-card')){
+            if(body.dataset.modal){
+                openTL.paused()
                 closeTL.restart()
-                body.classList.remove('open-card')
+                body.dataset.modal = ""
                 rotationTL.play()
             }else{
                 openTL.restart()
-                body.classList.add('open-card')
+                body.dataset.modal = planet.dataset.value
             }
         })
     })

@@ -1,0 +1,17 @@
+@keyframes levitation {
+  0%, 100% {
+    transform:translateY(0);
+  }
+  50% {
+    transform:translateY(-15px);
+  }
+}
+
+@keyframes smoke {
+  from{
+    transform: skew(-5deg);
+  }
+  to{
+    transform: skew(5deg);
+  }
+}

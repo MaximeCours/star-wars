@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     planets.forEach((planet, index) => {
         const page = pages[index]
         const content = document.querySelectorAll('.content')
+        const decoration = page.querySelector('.decorations')
 
         const openTL = gsap.timeline({
             paused: true
@@ -45,6 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
             visibility: 'visible',
         }, 1)
         openTL.to(content, {
+            duration: 1,
+            opacity: 1
+        }, 2)
+        openTL.to(decoration, {
             duration: 1,
             opacity: 1
         }, 2)

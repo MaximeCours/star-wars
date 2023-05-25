@@ -69,6 +69,13 @@ body{
   z-index: 1;
 }
 
+.asset {
+  height: 75vh;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 // Assets
 
 #planet0{
@@ -91,32 +98,8 @@ body{
   background-image: url("/img/coruscant/CoruscantJediTemple.svg");
 }
 
-#coruscant-tower1{
-  background-image: url("/img/coruscant/GratteCiel1.svg");
-}
-
-#coruscant-tower2{
-  background-image: url("/img/coruscant/GratteCiel2.svg");
-}
-
-#coruscant-tower3{
-  background-image: url("/img/coruscant/GratteCiel3.svg");
-}
-
-#coruscant-tower4{
-  background-image: url("/img/coruscant/GratteCiel4.svg");
-}
-
-#coruscant-tower5{
-  background-image: url("/img/coruscant/GratteCiel5.svg");
-}
-
-#coruscant-tower6{
-  background-image: url("/img/coruscant/GratteCiel6.svg");
-}
-
-#coruscant-tower7{
-  background-image: url("/img/coruscant/GratteCiel7.svg");
+#coruscant-skyline{
+  background-image: url("/img/coruscant/CoruscantSkyline.svg");
 }
 
 #senate{
@@ -179,7 +162,7 @@ body{
     width: 40%;
     margin-right: 30px;
     margin-left: auto;
-    min-height: 80vh;
+    min-height: 50vh;
 
     h2, p{
       display: flex;

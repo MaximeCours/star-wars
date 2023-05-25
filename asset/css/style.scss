@@ -85,7 +85,7 @@ body{
   height: 100vh;
   z-index: 6;
   visibility: hidden;
-  
+
 
   .content{
     display: flex;
@@ -93,11 +93,12 @@ body{
     align-items: center;
     width: 50%;
     margin-left: auto;
+    min-height: 100vh;
 
     h1, h2, p{
-      height: 100vh;
       display: flex;
       align-items: center;
+      height: 80vh;
     }
   }
 

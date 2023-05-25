@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.91 124.34">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f7bba9;
+      }
+
+      .cls-1, .cls-3 {
+        opacity: .5;
+      }
+
+      .cls-4, .cls-3 {
+        fill: #fff9e9;
+      }
+    </style>
+  </defs>
+  <g id="Nuages_et_Ciel" data-name="Nuages et Ciel">
+    <g>
+      <ellipse class="cls-3" cx="35.43" cy="32.75" rx="35.43" ry="32.75"/>
+      <ellipse class="cls-4" cx="35.43" cy="32.75" rx="33.73" ry="31.18"/>
+    </g>
+    <g>
+      <ellipse class="cls-1" cx="137.62" cy="91.71" rx="35.29" ry="32.62"/>
+      <ellipse class="cls-2" cx="137.62" cy="91.71" rx="33.73" ry="31.18"/>
+    </g>
+  </g>
+</svg>

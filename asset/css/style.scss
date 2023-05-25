@@ -62,6 +62,8 @@ body{
   z-index: 1;
 }
 
+// Assets
+
 #planet0{
   background-image: url("/img/planet/coruscant.svg");
 }
@@ -76,6 +78,58 @@ body{
 
 #planet3{
   background-image: url("/img/planet/tatooine.svg");
+}
+
+#jedi-temple{
+  background-image: url("/img/coruscant/CoruscantJediTemple.svg");
+}
+
+#coruscant-tower1{
+  background-image: url("/img/coruscant/GratteCiel1.svg");
+}
+
+#coruscant-tower2{
+  background-image: url("/img/coruscant/GratteCiel2.svg");
+}
+
+#coruscant-tower3{
+  background-image: url("/img/coruscant/GratteCiel3.svg");
+}
+
+#coruscant-tower4{
+  background-image: url("/img/coruscant/GratteCiel4.svg");
+}
+
+#coruscant-tower5{
+  background-image: url("/img/coruscant/GratteCiel5.svg");
+}
+
+#coruscant-tower6{
+  background-image: url("/img/coruscant/GratteCiel6.svg");
+}
+
+#coruscant-tower7{
+  background-image: url("/img/coruscant/GratteCiel7.svg");
+}
+
+#senate{
+  background-image: url("/img/coruscant/CoruscantSenat.svg");
+}
+
+#vader-castle {
+  background-image: url("/img/mustafar/VadersCastle.svg");
+}
+
+#lake-retreat {
+  background-image: url("/img/naboo/LakeRetreat.svg");
+}
+
+#tatooine-suns {
+  background-image: url("/img/tatooine/SoleilsTatooine.svg");
+}
+
+#lars-homestead {
+  background-image: url("/img/tatooine/LarsHomestead.svg");
 }
 
 #particles-js{

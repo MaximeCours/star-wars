@@ -5,12 +5,12 @@
 
 @font-face {
 	font-family: 'anakinmomo';
-	src: url('../font/anakinmono.ttf'); 
+	src: url('../font/anakinmono.ttf');
 }
 
 @font-face {
 	font-family: 'starjedi';
-	src: url('../font/starjedi.ttf'); 
+	src: url('../font/starjedi.ttf');
 }
 
 ol, ul {
@@ -185,7 +185,71 @@ body{
     min-height: 100vh;
   }
 
+  .cloud{
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    animation: levitation 3s ease-in-out infinite;
+  }
+
   & > *{
     opacity: 0;
+  }
+}
+
+.coruscant{
+  .decorations{
+    .decoration{
+      &:nth-child(1){
+        top: 135px;
+        left: 75px;
+        rotate: -47deg;
+      }
+
+      &:nth-child(2){
+        top: 160px;
+        left: 713px;
+        rotate: 47deg;
+        animation-delay: 1s;
+      }
+    }
+  }
+}
+
+.mustaffar{
+  .decorations{
+    .decoration{
+      &:nth-child(1){
+        top: 135px;
+        left: 75px;
+        rotate: -47deg;
+      }
+
+      &:nth-child(2){
+        top: 160px;
+        left: 713px;
+        rotate: 47deg;
+        animation-delay: 1s;
+      }
+    }
+  }
+}
+
+.naboo{
+  .decorations{
+    .decoration{
+      &:nth-child(1){
+        top: 135px;
+        left: 75px;
+        rotate: -47deg;
+      }
+
+      &:nth-child(2){
+        top: 160px;
+        left: 713px;
+        rotate: 47deg;
+        animation-delay: 1s;
+      }
+    }
   }
 }

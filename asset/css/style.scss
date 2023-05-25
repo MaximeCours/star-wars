@@ -18,10 +18,17 @@ ol, ul {
   padding: 0;
 }
 
-.title, h2{
+.title, h1, h2{
   font-family: 'starjedi';
   font-size: 50px;
   margin-bottom: 30px;
+}
+
+h1{
+  position: absolute;
+  z-index: 2;
+  color: #ffe81f;
+  text-align: center;
 }
 
 .title{
